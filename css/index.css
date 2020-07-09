@@ -1,0 +1,44 @@
+
+*,*::after,*::before{
+    box-sizing: border-box;
+  }
+  
+  :root{
+    /* Colors */
+    --color-white: #ffffff;
+    --color-yellow:	#FFFF00;
+    --color-orange:	#FFA500;
+    --color-orange-transparent:#ffa600c0;
+    --color-red:#af0909ff;
+    --color-black:#080909ff;
+    --color-light-gray: #cedad5ff;
+    --shadow-standard: 0 0 6px 0px #0000005c;
+  
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+  
+  html,body {
+    height: 100vh;
+    width : 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a, u {
+    text-decoration: none;
+  }
+  h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  h2{
+    text-transform: capitalize;
+  }
+
+  
+  
+  

@@ -1,0 +1,729 @@
+/*####################   HEADER SECTION   ####################### */
+
+
+h1{
+    margin: 0;
+}
+.header-nav{
+    background-color: #ffffff;
+    display : flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: var(--shadow-standard);
+    position: fixed;
+    z-index: 1;
+}
+
+.name{
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.links{
+    padding: 0 1rem;
+}
+.links  a{
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 600;
+    color: #000000;
+    transition: transform  500ms;
+}
+
+.name img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.name h1{
+    font-size: 1rem;
+    margin: 1rem;
+} 
+a:hover{
+   transform: scale(1.2);  
+}
+
+/* --------------------Side Panel------------------- */
+.dropdown{
+    display: none;
+}
+a{
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  nav{
+    position: absolute;
+    top:3.2rem;
+    right: 0;
+    transform:translateX(200%);
+  }
+  nav ul {
+    width: 100vw;  
+    overflow: hidden;
+    list-style: none;
+    transition: all 1s cubic-bezier(.325, 1, .22, 1);
+    background-color: #222222;
+  }
+  
+  nav li a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  nav li a:hover{
+    transition:1s cubic-bezier(.42,.54,1,.21) ;
+  }
+  
+  input[type=checkbox]:checked ~ nav {
+    transform:translateX(0%);
+    transition:0.5s cubic-bezier(.48,.42,0,1.29);
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  }
+  
+  .line {
+    position: absolute;
+    display: block;
+    background: #3d3d3d;
+    width: 18px;
+    height: .15rem;
+    border-radius: .2rem;
+    left: 0;
+    transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+  }
+  
+  .line-1 {
+    top: 0;
+  }
+  
+  .line-2 {
+    top: 7px;
+    width: 14px;
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+  }
+  
+  .line-3 {
+    top: 14px;
+  }
+  
+  input[type=checkbox]:checked ~ label .line-1 {
+    top: 0px;
+    width: 22px;
+    transform: translateX(-11px) rotate(-45deg) translateY(12px);
+  }
+  
+  input[type=checkbox]:checked ~ label .line-2 {
+    opacity: 0;
+  }
+  
+  input[type=checkbox]:checked ~ label .line-3 {
+    top: 14px;
+    width: 22px;
+    transform: translateX(-8px) rotate(45deg) translateY(-8px);
+  }
+
+  /*--------------------------   Media     -------------------------- */
+
+    @media only screen and (max-width: 600px){
+            .dropdown{
+                display: block;
+            }
+            .links{
+                display: none;
+            }
+
+  }
+
+
+  /* ########################  LANDING SECTION  ########################## */
+
+  .landing-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.623)), url(../assets/images/carDrive.jpg);
+    background-size: cover;
+    background-attachment : fixed; 
+    background-position-x: center;
+    height: 100vh;
+}  /* 
+
+h1{
+    line-height: 1.9rem;
+}
+.span-1, .span-4, .span-7{
+    color: #ffffff;
+}
+.span-1,.span-2{
+    font-size: 5rem;
+    font-weight: 700;
+    
+}
+.span-3{
+    padding-left: 1.5rem;
+}
+.span-3,.span-4{
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.8rem;
+    
+}
+.span-5{
+    color: red;
+}
+
+.span-2,.span-3,.span-6{
+    color: var(--color-yellow);
+}
+
+.overlay-text{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%,-50%);
+    
+}
+.tagline{
+    margin-top: 2rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+} */
+.overlay-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-img img{
+    width: 30rem;
+    height: 20rem;
+    margin-top: 3rem;
+    mix-blend-mode: lighten;
+
+}
+
+
+
+/* -------------------Media Queries----------------------- */
+
+@media only screen and (max-width: 600px){
+}
+
+@media only screen and (max-width: 480px){
+    .overlay-img img{
+        width: 20rem;
+        height: 12rem;
+    
+    }
+    
+}
+@media only screen and (max-width: 420px){
+ 
+}
+
+
+/* #############################  About Section   ####################### */
+
+
+.about-heading{
+    text-align: center;
+    margin: 4rem 0;
+}
+.about-heading h1::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.1rem;
+    background-color:var(--color-orange);
+    margin: 1rem auto;
+  }
+.about-page{
+    display: flex;
+    width: 100%;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+}
+.about-image img{
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+}
+.about-image{
+    align-items: center;
+
+}
+
+.about-desc{
+    width: 35rem;
+}
+.about-desc p{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    padding:2rem;
+}
+
+/* ####################  Why Us  ################################# */
+
+
+.whyus-heading{
+    text-align: center;
+    margin: 4rem 0;
+}
+.whyus-heading h1::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.1rem;
+    background-color:var(--color-orange);
+    margin: 1rem auto;
+  }
+.whyus-page{
+    display:flex;
+    width: 100%;
+    flex-flow:row-reverse wrap;
+    justify-content: space-evenly;
+}
+.whyus-image img{
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+.whyus-image{
+    align-items: center;
+}
+
+.whyus-desc{
+    width: 35rem;
+}
+.whyus-desc ul{
+    list-style-type: square;
+    padding-top: 4rem;
+
+}
+.whyus-desc ul li p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:600px){
+    .whyus-heading{
+        margin: 1rem 0;
+    }
+    .whyus-image img{
+        padding-bottom: 0;
+    }
+    .whyus-desc ul{
+        padding-top: 0;
+    }
+}
+
+
+
+/* #####################  Service Section ######################### */
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+}
+.services-heading h1::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.1rem;
+    background-color:var(--color-orange);
+    margin: 1rem auto;
+  }
+  
+
+.service-container{
+    display: flex;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.container-item{
+    margin: 1rem;
+    box-shadow: var(--shadow-standard);
+    width: 18rem;
+    height: 20rem;
+}
+
+.service-name{
+    text-align: center;
+}
+.service-description{
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+/* ------------------------  ICONS   -------------------------- */
+
+.fas{
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: var(--color-orange);
+}
+
+
+/* ############################  COVID Response  ####################### */
+
+.covid-heading{
+    text-align: center;
+    margin: 4rem 0;
+}
+.covid-heading h1::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.1rem;
+    background-color:var(--color-orange);
+    margin: 1rem auto;
+  }
+
+.covid-measures{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.points p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.points{
+    margin: 3rem 2rem;
+}
+
+.img-sanitize1 img{
+    width: 35rem;
+    height: 25rem;
+}
+.measures-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* -----------Media --------------------- */
+
+
+@media only screen and (max-width: 600px){
+    .img-sanitize1 img {
+        width: 100vw;
+        padding: 1rem;
+        height: 20rem;
+    }
+    .points{
+        margin: 0 2rem;
+    }
+}
+
+
+/* ------------------ Testimonials --------------------- */
+
+.testimonial-heading h1{
+    text-align: center;
+}
+
+.testimonial-heading h1::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 0.1rem;
+    background-color:var(--color-orange);
+    margin: 1rem auto;
+  }
+
+  .section-testimonials > div >  h2{
+    font-weight: 400;
+    padding-top: 30px;
+}
+ 
+.customer-reviews{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.customer{
+    margin: 3rem;
+    width: 20rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+blockquote{
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -66px;
+    left: -30px;
+}
+
+
+  /* #####################  Contact Section  ######################## */
+
+  .contact-section{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .map{
+    width : 30rem;
+    margin: auto 2rem ;
+    overflow: hidden;
+  }
+  
+  .contact-form{
+      width: 30rem;
+      box-sizing: border-box;
+      padding: 1rem 2rem;
+  }
+  .contact-form h1{
+      text-align: center;
+      margin-bottom: 1.7rem;
+  }
+  
+  .form-contact input[type=text],input[type=email], textarea {
+      width: 100%;
+      border: 0.01rem solid #ccc;
+      border-radius: 0.2rem;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0rem;
+  }
+  .form-contact textarea{
+      height: 10rem;
+      resize: none;
+      /* background: none; */
+      
+  }
+  .form-contact input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+    /* background-color: rgba(193, 222, 250, 0.548) ; */
+  }
+  .btn{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-orange);
+    color: #ffffff;
+    bottom: 3rem;
+    right: 1rem;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  /* ------------------------- Media ---------------------- */
+  @media only screen and (max-width:600px){
+    .contact-form{
+      width: 95vw;
+      padding: 1rem;
+    }
+    .map{
+      width: 90vw;
+      height: fit-content;
+      padding: 1rem;
+    }
+  }
+
+
+  /* #################   Footer Section  ################ */
+
+  footer{
+    background-color: #222;
+    width: 100%;
+}
+
+/* .footer-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.nav-social-link ul li{
+    margin: 20px;
+    list-style: none;
+   
+}*/
+.nav-left ul li{
+    list-style: none;
+    margin: 1rem 2rem;
+    
+}
+.footer-element li a{
+    color: gray;
+    width: 4rem;
+    margin: 1rem 1rem;
+}
+.footer-element{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  
+}
+
+
+.copyright p{
+    color: gray;
+    padding: 30px;
+    text-align: center;
+}
+.footer-element :hover{
+    color: white;
+    transition-duration: 0.4s;
+}
+
+@media only screen and (max-width:480px){
+    /* .footer-element{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+      
+    } */
+
+}
+
+
+/* ################### Section Enrollment  ################## */
+
+.floating-button{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+    background-color: var(--color-orange-transparent);
+    color: #ffffff;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.modalform{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    padding: 0 1rem;
+    backdrop-filter: blur(2px) contrast(20%);
+    display: none;
+}
+.form-modal{
+    width: 30rem;
+    align-items: center;
+    background-color: #171717;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.form-modal h2{
+    text-align: center;
+    color: var(--color-orange);
+    
+}
+
+
+.form-modal input[type=text],input[type=email], input[type="tel"], select {
+    width: 100%;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.2rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0rem;
+
+}
+.enroll{
+    width:50%;
+    margin: 2rem auto;
+}
+
+.form-modal input[type="text"], input[type="password"], select, input[type="tel"]  { 
+  outline: none;
+  background-color: #ffffff ;
+}
+.close {
+    color: #aaa;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+  }
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width:600px){
+    .form-modal{
+        width: 100vw;
+    }
+}
+
+
+
+
+
+  
+   
