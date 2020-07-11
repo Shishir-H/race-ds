@@ -806,10 +806,10 @@ blockquote:before {
     transition: 1s;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:400px){
     .floating-button{
-        bottom: 1.3rem;
-        right: 1.5rem;
+        bottom: 1rem;
+        left: 1rem;
     }
 }
 
