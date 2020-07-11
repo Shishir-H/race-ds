@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Race Driving School</title>
-    <link rel="shortcut icon" href="../assets/raceds1.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/raceds-icon.svg" type="image/x-icon">
 
 
     <link rel="stylesheet" href="../css/style.css">
@@ -14,7 +14,7 @@
     <script src="../javascript/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-    <body onload="load()">
+    <body>
         
         
         <section class="section header-section">
@@ -24,19 +24,26 @@
                   <img src="../assets/raceds.jpg" alt="Logo">
                   <h1>The Race</h1>
                </div>
-               <div class="links"><a href="">About</a><a href="">Why Us</a><a href="">Services</a><a href="">Contact</a></div>
+               <div class="links">
+                  <a href="#about">About</a>
+                  <a href="#whyus">Why Us</a>
+                  <a href="#services">Services</a>
+                  <a href="#testimonials">Testimonials</a>
+                  <a href="#contact">Contact</a>
+               </div>
                <div class="dropdown">
-                  <input type="checkbox" id="checkbox_toggle">
-                  <label for="checkbox_toggle" class="hamburger">
+                  <input type="checkbox" id="checkbox-toggle">
+                  <label for="checkbox-toggle" class="hamburger">
                      <div class="line line-1"></div>
                      <div class="line line-2"></div>
                      <div class="line line-3"></div>
                   </label>
-                  <nav>
+                  <nav id="sidenav">
                      <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#whyus">Why Us</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                      </ul>
                   </nav>
@@ -46,12 +53,7 @@
         </section>
 
         <section class="section landing-section">
-                   <!-- <div class="overlay-text">
-                      <h1><span class="span span-1">The </span> <span class="span span-2">Race <br></span><span class="span span-3">Driving </span><span class="span span-4">School</span></h1>
-                      <div class="tagline">
-                         <h1><span class="span span-5">Learn <span class="span span-6">| Drive | <span class="span span-7">Race</span></span></span></h1>
-                      </div>
-                   </div> -->
+                   
                    <div class="overlay-img">
                      <img src="../assets/overlay-text.jpg" alt="text">
                    </div>
@@ -72,7 +74,7 @@
             </div>
          </section>
 
-         <section class="section whyus-section" id="why-us">
+         <section class="section whyus-section" id="whyus">
             <div>
                <div class="whyus-heading">
                   <h1>Why Us</h1>
@@ -103,7 +105,7 @@
          </section>
         
         
-        <section class="section service-section" id="service">
+        <section class="section service-section" id="services">
             <div>
             <div class="services-heading">
                 <h1>Services</h1>
@@ -218,13 +220,16 @@
                     </div>
                     <div class="customer-reviews">
                        <div class="customer">
-                          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
+                          <blockquote>Had an amazing experience learning how to drive. The instructor was calm and helped me get over my fear of driving. This is easily one of the best driving schools in Bangalore. Very satisfied with the service they've provided.</blockquote>
+                          <cite> <img src="https://lh3.googleusercontent.com/-oXcwQF6fyv8/AAAAAAAAAAI/AAAAAAAAAAA/JxtWtPl6H-o/s40-c-rp-mo-br100/photo.jpg" alt="customer1"> Vishruth Shyam</cite>
                        </div>
                        <div class="customer">
-                          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
-                       </div>
+                          <blockquote>Thanks to Mr Subramanya,I am able to practice on my own vehicle after the 10th day.He is very polite and is never rude.Gives full control of the car to you and tells and guides whenever we go wrong.Also thanks to Mr Kiran.Highly recommend Mr Subramanya as an instructor .👍</blockquote>
+                          <cite> <img src="https://lh5.googleusercontent.com/-XTJ-JtauL4E/AAAAAAAAAAI/AAAAAAAAAAA/reYcVGSSb9c/s40-c-rp-mo-br100/photo.jpg" alt="customer1"> Bhavuk Arora</cite>
+                        </div>
                        <div class="customer">
-                          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote>
+                          <blockquote>Best place to learn driving. The instructor Shamanth is extremely professional and patient. He will ensure you are perfect in every aspect of driving within 7-8 days. I highly recommend this place for anyone who wants learn from basics or perfect their driving skills.</blockquote>
+                          <cite> <img src="https://lh4.googleusercontent.com/-n8aWORCxXbU/AAAAAAAAAAI/AAAAAAAAAAA/RtUK-1FA_mY/s40-c-rp-mo-br100/photo.jpg" alt="customer1"> Mansoor Khan</cite>
                        </div>
                     </div>
                  </div>
@@ -238,8 +243,7 @@
                                 <input type="text" id="contact-name" name="name" placeholder="Your Name">
                                 <input type="text" id="contact-mail" name="mail-id" placeholder="E-mail">
                                 <input type="text" id="subject" name="subject" placeholder="Subject">
-                                <textarea 
-                                        type="text" id="textarea" name="long-text" placeholder="Write something..">
+                                <textarea type="text" id="textarea" name="long-text" placeholder="Write something..">
                                 </textarea>
                                 <button class="btn submit-btn">Submit</button>
                             </form>
@@ -249,12 +253,12 @@
                  </div>
               </section>
               <section class=" secttion enrollment">
-                <button class="floating-button" id="enrollbtn" onclick="openModal()">Enroll Now</button>
+                <button class="floating-button" id="enrollbtn" >Enroll Now</button>
     
                 <form class="modalform" id="modal">
-                    <div class="form-modal">
+                    <div class="form-modal" id="form">
                         <h2>Enroll Now</h2>
-                        <span class="close" id="close" onclick="closeModal()">&times;</span>
+                        <span class="close" id="close">&times;</span>
                         <input type="text" id="fname" name="fname" placeholder="First Name" required>
                         <input type="text" id="lname" name="lname" placeholder="Last Name" >
                         <input type="text" id="mail" name="mail-id" placeholder="E-mail">

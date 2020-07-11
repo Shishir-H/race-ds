@@ -65,6 +65,8 @@ a{
     list-style: none;
     transition: all 1s cubic-bezier(.325, 1, .22, 1);
     background-color: #222222;
+    margin: 0;
+    padding: 0;
   }
   
   nav li a {
@@ -83,6 +85,11 @@ a{
   
   input[type=checkbox]:checked ~ nav {
     transform:translateX(0%);
+    transition:0.5s cubic-bezier(.48,.42,0,1.29);
+  }
+
+  input[type=checkbox]:not(:checked) ~ nav {
+    transform:translateX(200%);
     transition:0.5s cubic-bezier(.48,.42,0,1.29);
   }
   
@@ -128,7 +135,7 @@ a{
     width: 22px;
     transform: translateX(-11px) rotate(-45deg) translateY(12px);
   }
-  
+
   input[type=checkbox]:checked ~ label .line-2 {
     opacity: 0;
   }
@@ -380,7 +387,7 @@ h1{
     text-align: justify;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* ------------------------  ICONS   -------------------------- */
@@ -424,6 +431,8 @@ h1{
 }
 
 .img-sanitize1 img{
+    border-radius: 5px;
+    box-shadow: var(--shadow-standard);
     width: 35rem;
     height: 25rem;
 }
@@ -464,11 +473,11 @@ h1{
 
   .section-testimonials > div >  h2{
     font-weight: 400;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
  
 .customer-reviews{
-    padding-top: 50px;
+    padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -476,12 +485,25 @@ h1{
 }
 
 .customer{
-    margin: 3rem;
+    margin: 1.5rem;
     width: 20rem;
     font-style: italic;
     line-height: 1.5rem;
     font-size: 1rem;
     font-weight: 500;
+}
+cite img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+cite{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--color-orange);
+    font-weight: 600;
 }
 
 
@@ -491,11 +513,11 @@ blockquote{
 
 blockquote:before {
     content: "\201C";
-    font-size: 500%;
+    font-size: 5rem;
     display: block;
     position: absolute;
-    top: -66px;
-    left: -30px;
+    top: -1rem;
+    left: -2rem;
 }
 
 
@@ -567,7 +589,7 @@ blockquote:before {
     .map{
       width: 90vw;
       height: fit-content;
-      padding: 1rem;
+      padding-top: 1rem;
     }
   }
 
@@ -614,7 +636,7 @@ blockquote:before {
 
 .copyright p{
     color: gray;
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
 }
 .footer-element :hover{
@@ -717,7 +739,7 @@ blockquote:before {
 
 @media only screen and (max-width:600px){
     .form-modal{
-        width: 100vw;
+        width: 95vw;
     }
 }
 
