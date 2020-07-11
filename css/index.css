@@ -9,7 +9,7 @@
     --color-yellow:	#FFFF00;
     --color-orange:	#FFA500;
     --color-orange-transparent:#ffa600c0;
-    --color-red:#af0909ff;
+    --color-red: #ff4f5a;
     --color-black:#080909ff;
     --color-light-gray: #cedad5ff;
     --shadow-standard: 0 0 6px 0px #0000005c;
@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
   }
   a, u {
     text-decoration: none;

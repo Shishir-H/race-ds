@@ -14,10 +14,11 @@ h1{
     z-index: 1;
 }
 
-.name{
+.name a{
     display: flex;
     width: fit-content;
     cursor: pointer;
+    color: var(--color-red);
     margin-left: 1rem;
 }
 .links{
@@ -39,7 +40,7 @@ h1{
     font-size: 1rem;
     margin: 1rem;
 } 
-a:hover{
+.links a:hover{
    transform: scale(1.2);  
 }
 
@@ -63,7 +64,7 @@ a{
     width: 100vw;  
     overflow: hidden;
     list-style: none;
-    transition: all 1s cubic-bezier(.325, 1, .22, 1);
+    transition: transform 1s cubic-bezier(.325, 1, .22, 1);
     background-color: #222222;
     margin: 0;
     padding: 0;
@@ -377,7 +378,16 @@ h1{
     margin: 1rem;
     box-shadow: var(--shadow-standard);
     width: 18rem;
+    border-radius: 10px;
     height: 20rem;
+    backface-visibility: hidden;
+}
+
+.container-item:hover{
+    transform: scale(1.06);
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0px #0000005c;
+    transition: 1s all;
 }
 
 .service-name{
@@ -388,6 +398,11 @@ h1{
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 500;
+}
+.img-icon{
+    width:5rem;
+    height:4rem;
+    margin: 1.5rem auto;
 }
 
 /* ------------------------  ICONS   -------------------------- */
@@ -601,7 +616,8 @@ blockquote:before {
     width: 100%;
 }
 
-/* .footer-nav{
+.footer-nav{
+    padding-top: 1rem;
     display: flex;
     width: 100%;
     align-items: center;
@@ -609,18 +625,34 @@ blockquote:before {
     justify-content: space-between;
 }
 
+.footer-nav ul{
+    margin: 0;
+}
 
+/*
 
 .nav-social-link ul li{
     margin: 20px;
     list-style: none;
    
 }*/
-.nav-left ul li{
+.nav-left ul li,.nav-right ul li{
     list-style: none;
-    margin: 1rem 2rem;
-    
 }
+
+.nav-left{
+    width: fit-content;
+}
+
+.nav-right{
+    width: min-content;
+    margin-right: 1rem;
+}
+
+.nav-right img{
+    width: 2rem;
+}
+
 .footer-element li a{
     color: gray;
     width: 4rem;
@@ -631,6 +663,11 @@ blockquote:before {
     width: 100%;
     flex-wrap: wrap;
   
+}
+.footer-element li a :last-child{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem 1rem;
 }
 
 
@@ -743,7 +780,24 @@ blockquote:before {
     }
 }
 
+.dev a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}   
+.dev :hover{
+    color: #ffffff;
+    transition: 1s;
+}
 
+@media only screen and (max-width:600px){
+    .floating-button{
+        bottom: 1.3rem;
+        right: 1.5rem;
+    }
+}
 
 
 

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Race Driving School</title>
-    <link rel="shortcut icon" href="../assets/raceds-icon.svg" type="image/x-icon">
+    <link rel="icon" href="./assets/raceds-icon.ico" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-          rel="stylesheet"  type='text/css'>
-    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascript/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
     <body>
@@ -21,8 +20,10 @@
             <header class="page-header">
             <div class="header-nav">
                <div class="name">
-                  <img src="../assets/raceds.jpg" alt="Logo">
-                  <h1>The Race</h1>
+                  <a href="/">
+                     <img src="./assets/raceds.jpg" alt="Logo">
+                     <h1>The Race</h1>               
+                  </a>
                </div>
                <div class="links">
                   <a href="#about">About</a>
@@ -55,7 +56,7 @@
         <section class="section landing-section">
                    
                    <div class="overlay-img">
-                     <img src="../assets/overlay-text.jpg" alt="text">
+                     <img src="./assets/overlay-text.jpg" alt="text">
                    </div>
                   
         </section>
@@ -66,7 +67,7 @@
                   <h1>About Us</h1>
                </div>
                <div class="about-page">
-                  <div class="about-image"><img src="../assets/raceds.jpg" alt="full-logo"></div>
+                  <div class="about-image"><img src="./assets/raceds.jpg" alt="full-logo"></div>
                   <div class="about-desc">
                      <p>We, at THE RACE believe that driving tuition involves not only time and effort, but also attention and concentration in order to effective results and learn the driving rules perfectly. We aim mainly at making your ride more comfortable, more confident, pleasurable and a safe one.</p>
                   </div>
@@ -80,7 +81,7 @@
                   <h1>Why Us</h1>
                </div>
                <div class="whyus-page">
-                  <div class="whyus-image"><img src="../assets/images/whyusvector.jpg" alt="whyus-img"></div>
+                  <div class="whyus-image"><img src="./assets/images/whyusvector.jpg" alt="whyus-img"></div>
                   <div class="whyus-desc">
                      <ul>
                         <li>
@@ -113,7 +114,7 @@
             <div class="service-container">
                 <div class="container-item">
                     <div class="service-name">
-                        <i class="fas fa-motorcycle"></i>
+                        <img class="img-icon" src="./assets/Icons/car.svg" alt="">
                         <h2>two and four wheeler training</h2>
                         <div class="service-description">
                         <p>With our best training , We endup in providing the best quality of driving skills, safe and Responsible driver.</p>
@@ -122,8 +123,8 @@
                 </div>
                 <div class="container-item">
                   <div class="service-name">
-                     <i class="fas fa-id-card"></i>
-                     <h2>Driving Licens</h2>
+                     <img class="img-icon" src="./assets/Icons/license.svg" alt="">
+                     <h2>Driver's Licens</h2>
                      <div class="service-description">
                      <p>Two, Three & Four wheeler Driving licence made easy with the The Race driving school</p>
                      </div>
@@ -131,7 +132,7 @@
                 </div>
                 <div class="container-item">
                     <div class="service-name">
-                        <i class="fas fa-id-card"></i>
+                     <img class="img-icon" src="./assets/Icons/skills.svg" alt="">
                         <h2>RTO Consultant</h2>
                         <div class="service-description">
                         <p>With our best RTO consultant, Getting the Driving license, all type vehicle Registration, and other RTO Services made easy</p>
@@ -140,7 +141,7 @@
                 </div>
                 <div class="container-item">
                     <div class="service-name">
-                        <i class="fas fa-file"></i>
+                     <img class="img-icon" src="./assets/Icons/automobile.svg" alt="">
                         <h2>Vehicle Insurance</h2>
                         <div class="service-description">
                         <p>All type of vehicle insurance with yearly remainder.</p>
@@ -181,7 +182,7 @@
                              </li>
                           </ul>
                        </div>
-                       <div class="img-sanitize1"><img src="../assets/images/sanitize1.jpg" alt=""></div>
+                       <div class="img-sanitize1"><img src="./assets/images/sanitize1.jpg" alt=""></div>
                     </div>
                     <div class="covid-measures measures-2">
                        <div class="points">
@@ -207,7 +208,7 @@
                              </li>
                           </ul>
                        </div>
-                       <div class="img-sanitize1"><img src="../assets/images/sanitize1.jpg" alt=""></div>
+                       <div class="img-sanitize1"><img src="./assets/images/sanitize2.jpg" alt=""></div>
                     </div>
                  </div>
         </section>
@@ -280,16 +281,22 @@
                        <div class="footer-nav">
                           <div class="nav-left">
                              <ul class="footer-element">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Why Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#whyus">Why Us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                             </ul>
+                          </div>
+                          <div class="nav-right">
+                             <ul>
+                                <li><a href="https://www.facebook.com/Theraceds/" target="_blank"><img src="./assets/Icons/icons8-facebook-150.png"/></a></li>
                              </ul>
                           </div>
                        </div>
                        <div class="copyright">
                           <p>Copyright © 2020 by The Race. All rights reserved.</p>
-                       </div>
+                           <p class="dev">Design and Development By <a href="https://www.linkedin.com/in/shishir-h-b45633188/" target="_blank">Shishir H</a> </p>
+                        </div>
                     </footer>
                  </div>
         </section>
