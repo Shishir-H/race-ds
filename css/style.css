@@ -48,9 +48,9 @@ h1{
 .dropdown{
     display: none;
 }
-a{
-    cursor: pointer;
-  }
+  a{
+        cursor: pointer;
+    }
   input[type=checkbox] {
     display: none;
   }
@@ -58,6 +58,8 @@ a{
     position: absolute;
     top:3.2rem;
     right: 0;
+    height: 100%;
+    background: transparent;
     transform:translateX(200%);
   }
   nav ul {
@@ -460,9 +462,13 @@ h1{
 
 
 @media only screen and (max-width: 600px){
-    .img-sanitize1 img {
-        width: 100vw;
+    .img-sanitize1{
+        width: 100%;
         padding: 1rem;
+    }
+    
+    .img-sanitize1 img {
+        width: 100%;
         height: 20rem;
     }
     .points{
@@ -748,11 +754,10 @@ blockquote:before {
     border-radius: 0.2rem;
     padding: 0.8rem 1rem;
     margin: 1rem 0rem;
-
 }
 .enroll{
     width:50%;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .form-modal input[type="text"], input[type="password"], select, input[type="tel"]  { 
@@ -776,7 +781,16 @@ blockquote:before {
 
 @media only screen and (max-width:600px){
     .form-modal{
-        width: 95vw;
+        width: 75vw;
+    }
+    
+    .form-modal input[type=text],input[type=email], input[type="tel"], select {
+        margin: .5rem auto;
+        padding: .4rem .6rem;
+    }
+
+    .form-modal h2{
+        font-size: 1.5rem;
     }
 }
 
