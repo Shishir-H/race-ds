@@ -382,12 +382,12 @@ h1{
 
 
 @media only screen and (max-width: 600px){
-    .img-sanitize1{
+    .img-sanitize{
         width: 100%;
         padding: 1rem;
     }
     
-    .img-sanitize1 img {
+    .img-sanitize img {
         width: 100%;
         height: 20rem;
     }
