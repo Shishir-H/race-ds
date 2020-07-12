@@ -170,50 +170,7 @@ h1{
     background-attachment : fixed; 
     background-position-x: center;
     height: 100vh;
-}  /* 
-
-h1{
-    line-height: 1.9rem;
-}
-.span-1, .span-4, .span-7{
-    color: #ffffff;
-}
-.span-1,.span-2{
-    font-size: 5rem;
-    font-weight: 700;
-    
-}
-.span-3{
-    padding-left: 1.5rem;
-}
-.span-3,.span-4{
-    font-size: 2.2rem;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-    word-spacing: 0.8rem;
-    
-}
-.span-5{
-    color: red;
-}
-
-.span-2,.span-3,.span-6{
-    color: var(--color-yellow);
-}
-
-.overlay-text{
-    position:relative;
-    top: 50%;
-    left: 50%;
-    width: fit-content;
-    transform: translate(-50%,-50%);
-    
-}
-.tagline{
-    margin-top: 2rem;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-} */
+} 
 .overlay-img{
     display: flex;
     width: 100%;
@@ -248,16 +205,12 @@ h1{
 @media only screen and (max-width: 420px){
  
 }
-
-
-/* #############################  About Section   ####################### */
-
-
-.about-heading{
+/* ----------------------   Section Heading------------------- */
+.section-heading{
     text-align: center;
     margin: 4rem 0;
 }
-.about-heading h1::after {
+.section-heading h1::after {
     content: "";
     display: block;
     width: 5%;
@@ -265,6 +218,11 @@ h1{
     background-color:var(--color-orange);
     margin: 1rem auto;
   }
+
+
+/* #############################  About Section   ####################### */
+
+
 .about-page{
     display: flex;
     width: 100%;
@@ -294,18 +252,6 @@ h1{
 /* ####################  Why Us  ################################# */
 
 
-.whyus-heading{
-    text-align: center;
-    margin: 4rem 0;
-}
-.whyus-heading h1::after {
-    content: "";
-    display: block;
-    width: 5%;
-    height: 0.1rem;
-    background-color:var(--color-orange);
-    margin: 1rem auto;
-  }
 .whyus-page{
     display:flex;
     width: 100%;
@@ -352,20 +298,6 @@ h1{
 
 /* #####################  Service Section ######################### */
 
-.services-heading {
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2.5rem;
-}
-.services-heading h1::after {
-    content: "";
-    display: block;
-    width: 5%;
-    height: 0.1rem;
-    background-color:var(--color-orange);
-    margin: 1rem auto;
-  }
-  
 
 .service-container{
     display: flex;
@@ -418,18 +350,6 @@ h1{
 
 /* ############################  COVID Response  ####################### */
 
-.covid-heading{
-    text-align: center;
-    margin: 4rem 0;
-}
-.covid-heading h1::after {
-    content: "";
-    display: block;
-    width: 5%;
-    height: 0.1rem;
-    background-color:var(--color-orange);
-    margin: 1rem auto;
-  }
 
 .covid-measures{
     display: flex;
@@ -447,7 +367,7 @@ h1{
     margin: 3rem 2rem;
 }
 
-.img-sanitize1 img{
+.img-sanitize img{
     border-radius: 5px;
     box-shadow: var(--shadow-standard);
     width: 35rem;
@@ -479,18 +399,7 @@ h1{
 
 /* ------------------ Testimonials --------------------- */
 
-.testimonial-heading h1{
-    text-align: center;
-}
 
-.testimonial-heading h1::after {
-    content: "";
-    display: block;
-    width: 10%;
-    height: 0.1rem;
-    background-color:var(--color-orange);
-    margin: 1rem auto;
-  }
 
   .section-testimonials > div >  h2{
     font-weight: 400;
@@ -569,20 +478,20 @@ blockquote:before {
       margin-bottom: 1.7rem;
   }
   
-  .form-contact input[type=text],input[type=email], textarea {
+  .form-fields input[type=text],input[type=email], textarea {
       width: 100%;
       border: 0.01rem solid #ccc;
       border-radius: 0.2rem;
       padding: 0.8rem 1rem;
       margin: 1rem 0rem;
   }
-  .form-contact textarea{
+  textarea{
       height: 10rem;
       resize: none;
       /* background: none; */
       
   }
-  .form-contact input[type="text"], input[type="password"], textarea, select { 
+  .form-fields input[type="text"], input[type="password"], textarea, select { 
     outline: none;
     /* background-color: rgba(193, 222, 250, 0.548) ; */
   }
@@ -635,13 +544,6 @@ blockquote:before {
     margin: 0;
 }
 
-/*
-
-.nav-social-link ul li{
-    margin: 20px;
-    list-style: none;
-   
-}*/
 .nav-left ul li,.nav-right ul li{
     list-style: none;
 }
@@ -670,11 +572,11 @@ blockquote:before {
     flex-wrap: wrap;
   
 }
-.footer-element li a :last-child{
+/* .footer-element li a :last-child{
     height: 2rem;
     width: 2rem;
     margin: 1rem 1rem;
-}
+} */
 
 
 .copyright p{
@@ -688,14 +590,16 @@ blockquote:before {
 }
 
 @media only screen and (max-width:480px){
-    /* .footer-element{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-      
-    } */
-
+    .nav-right img{
+        width: 2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-left ul li{
+        margin-top: 1rem;
+    }
+   
+    
 }
 
 
@@ -729,7 +633,7 @@ blockquote:before {
     backdrop-filter: blur(2px) contrast(20%);
     display: none;
 }
-.form-modal{
+.modal-form-fields{
     width: 30rem;
     align-items: center;
     background-color: #171717;
@@ -741,14 +645,14 @@ blockquote:before {
     left:50%;
     transform: translate(-50%,-50%);
 }
-.form-modal h2{
+.modal-form-fields h2{
     text-align: center;
     color: var(--color-orange);
     
 }
 
 
-.form-modal input[type=text],input[type=email], input[type="tel"], select {
+.modal-form-fields input[type=text],input[type=email], input[type="tel"], select {
     width: 100%;
     border: 0.01rem solid #ccc;
     border-radius: 0.2rem;
@@ -760,7 +664,7 @@ blockquote:before {
     margin: 1rem auto;
 }
 
-.form-modal input[type="text"], input[type="password"], select, input[type="tel"]  { 
+.modal-form-fields input[type="text"], input[type="password"], select, input[type="tel"]  { 
   outline: none;
   background-color: #ffffff ;
 }
@@ -780,16 +684,16 @@ blockquote:before {
   }
 
 @media only screen and (max-width:600px){
-    .form-modal{
+    .modal-form-fields{
         width: 75vw;
     }
     
-    .form-modal input[type=text],input[type=email], input[type="tel"], select {
+    .modal-form-fields input[type=text],input[type=email], input[type="tel"], select {
         margin: .5rem auto;
         padding: .4rem .6rem;
     }
 
-    .form-modal h2{
+    .modal-form-fields h2{
         font-size: 1.5rem;
     }
 }
