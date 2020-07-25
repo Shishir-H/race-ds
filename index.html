@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jz739MRvM-gQM3NjUIn9ayVArUXK_BB8DGaEaVhHfz0" />
     <title>The Race Driving School | learn | Drive | Race</title>
     <meta name="description" content="The Race is one of the most prestigious driving schools in Bengaluru. We offer quality training for our students. Our highly experienced staff make sure you nail that exam.">
     <link rel="icon" href="./assets/Icons/icon.ico" type="image/x-icon">
@@ -238,12 +239,13 @@
                     <div class="contact-section">
                        <div class="contact-form">
                           <h1>Contact Us</h1>
-                          <form class="form-fields">
+                          <form class="form-fields" action="race-backend/contact.php" method="post">
                                 <input type="text" id="contact-name" name="name" placeholder="Your Name">
-                                <input type="text" id="contact-mail" name="mail-id" placeholder="E-mail">
+                                <input type="tel" id="phone-no" name="num" placeholder="Phone Number">
+                                <input type="text" id="contact-mail" name="email" placeholder="E-mail">
                                 <input type="text" id="subject" name="subject" placeholder="Subject">
-                                <textarea type="text" id="textarea" name="long-text" placeholder="Write something.."></textarea>
-                                <button class="btn submit-btn">Submit</button>
+                                <textarea type="text" id="textarea" name="message" placeholder="Write something.."></textarea>
+                                <button class="btn submit-btn" id="submit">Submit</button>
                             </form>
                        </div>
                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9510496452785!2d77.56473071448336!3d12.9108677197021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae157664a294c1%3A0x99632009c9774c1c!2sThe%20Race%20Driving%20School!5e0!3m2!1sen!2sin!4v1594040613239!5m2!1sen!2sin" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" style="border: 0px;"></iframe></div>
@@ -253,20 +255,25 @@
               <section class=" secttion enrollment">
                 <button class="floating-button" id="enrollbtn" >Enroll Now</button>
     
-                <form class="modalform" id="modal">
-                    <div class="modal-form-fields" id="form">
+                <form class="modalform" id="modal" action="race-backend/enroll.php" method="post">
+                    <div class="modal-form-fields" id="form" >
                         <h2>Enroll Now</h2>
                         <span class="close" id="close">&times;</span>
                         <input type="text" id="fname" name="fname" placeholder="First Name" required>
                         <input type="text" id="lname" name="lname" placeholder="Last Name" >
-                        <input type="text" id="mail" name="mail-id" placeholder="E-mail">
-                        <select>
-                            <option value="0">Select:</option>
-                            <option value="1">Two Wheeler</option>
-                            <option value="2">Four Wheeler</option>
+                        
+                        <input type="text" id="mail" name="mail_id" placeholder="E-mail" required>
+                        <select required name="type" id="type">
+                           <option value="" disabled selected hidden>Select :</option>
+                            <option value="0">Two Wheeler</option>
+                            <option value="1">Four Wheeler</option>
+                            <option value="2">Both Two and Four Wheeler</option>
+                            <option value="3">Insurance</option>
+                            <option value="4">RC Renewal</option>
+                            
                         </select>
                         <input type="tel" id="phone-no" name="num" placeholder="Phone Number" required>
-                        <button class="btn enroll">Enroll</button>
+                        <button class="btn enroll" id="formenrollbtn">Enroll</button>
                     </div>
                                        
                 </form>
