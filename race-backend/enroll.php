@@ -13,7 +13,7 @@
         if($result){
             
         }
-        header("Location: http://localhost:8080/the-race/");
+        header("Location: https://raceds.in");
     
     
 ?>

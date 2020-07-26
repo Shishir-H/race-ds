@@ -15,13 +15,13 @@
         $result=mysqli_query($conn,$query);
 
 
-        $msg = "Hi,\n\n Mr.".$name." is wanting to contact you via contact us form in your website. Please consider this request and revert to him asap. \n\n The Information Filled by him can be found below\n Name : ".$name."\n Email : ".$email."\n Phone : ".$num."\n Query Subject : ".$subject."\n Query Message : ".$query;
-        $msg = $msg."\n\nPlease Revert to him ASAP.\nThank You..\n\nRegards,\nDEV Team,\nRaceDS.";
-        $msg = wordwrap($msg,70);
+        // $msg = "Hi,\n\n Mr.".$name." is wanting to contact you via contact us form in your website. Please consider this request and revert to him asap. \n\n The Information Filled by him can be found below\n Name : ".$name."\n Email : ".$email."\n Phone : ".$num."\n Query Subject : ".$subject."\n Query Message : ".$query;
+        // $msg = $msg."\n\nPlease Revert to him ASAP.\nThank You..\n\nRegards,\nDEV Team,\nRaceDS.";
+        // $msg = wordwrap($msg,70);
 
-        mail("shishirharikripa@gmail.com",$name." is trying to Contact You via your website",$msg);
+        // mail("shishirharikripa@gmail.com",$name." is trying to Contact You via your website",$msg);
         
-        header("Location: http://localhost:8080/the-race/");
+        header("Location: https://raceds.in");
     }
     
 ?>
