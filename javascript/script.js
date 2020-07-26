@@ -104,7 +104,6 @@
       modal.style.display = "none";
     }
     
-  
   }
 
   window.onload=init

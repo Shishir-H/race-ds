@@ -209,14 +209,14 @@ h1{
     text-align: center;
     margin: 4rem 0;
 }
-.section-heading h1::after {
+/* .section-heading h1::after {
     content: "";
     display: block;
     width: 5%;
     height: 0.1rem;
     background-color:var(--color-orange);
     margin: 1rem auto;
-  }
+  } */
 
 
 /* #############################  About Section   ####################### */
@@ -619,6 +619,10 @@ blockquote:before {
     cursor: pointer;
     z-index: 2;
 }
+.floating-button:hover{
+    background-color: var(--color-orange);
+    transition:0.2s ease-in;
+}
 .modalform{
     position: fixed;
     width: 100%;
@@ -661,6 +665,10 @@ blockquote:before {
 .enroll{
     width:50%;
     margin: 1rem auto;
+}
+
+.onEnroll{
+    display: none;
 }
 
 .modal-form-fields input[type="text"], input[type="password"], select, input[type="tel"]  { 
@@ -716,6 +724,10 @@ blockquote:before {
     }
 }
 
+
+.hidden{
+    display: none;
+}
 
 
   
