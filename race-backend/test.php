@@ -5,6 +5,9 @@
         $data=$_POST['request'];
         header('Content-Type: application/json');
         echo json_encode($data);
+    }else{
+        header('Content-Type: application/json');
+        echo json_encode({error:true});
     }
     
 ?>
