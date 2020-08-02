@@ -1,8 +1,8 @@
 <?php
 
     $dbhost = "localhost";
-    $dbpass = "db@578raceDs";    
     $dbuname = "u337983356_admin_race";
+    $dbpass = "db@578raceDs"; 
     $dbname="u337983356_therace";
 
 
