@@ -15,7 +15,7 @@
         $msg = $msg."\n\nPlease Revert to him ASAP.\nThank You..\n\nRegards,\nDEV Team,\nRaceDS.";
         $msg = wordwrap($msg,70);
 
-        mail("shishirharikripa@gmail.com",$name." is trying to Contact You via your website",$msg);
+        mail("shishirharikripa@gmail.com",$fname." is trying to Contact You via your website",$msg);
         
         header("Location: https://raceds.in");
     }
