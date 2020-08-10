@@ -17,7 +17,7 @@
         $msg = $msg."\n\nPlease Revert to him ASAP.\nThank You..\n\nRegards,\nDEV Team,\nRaceDS.";
         $msg = wordwrap($msg,70);
     
-        mail("shishirharikripa@gmail.com",$fname." has enrolled for ".$type." via your website",$msg);
+        mail("theracedrivingschool@gmail.com",$fname." has enrolled for ".$type." via your website",$msg);
     
         header("Location: https://raceds.in");
     
